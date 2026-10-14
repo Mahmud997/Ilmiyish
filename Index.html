@@ -1,0 +1,633 @@
+
+<!doctype html>
+<html lang="kk">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#102a56"><meta name="description" content="QazResearch AI PRO MAX — пәнге, жасқа және тілге бейімделетін ғылыми жұмыс құралы">
+  <title>QazResearch AI PRO MAX</title>
+  <style>
+    :root{--navy:#102a56;--navy2:#173b74;--blue:#2864d7;--blue2:#4d82ed;--ink:#15233b;--muted:#718096;--line:#e1e8f2;--surface:#fff;--bg:#f4f7fb;--soft:#eef4ff;--green:#13856b;--shadow:0 14px 40px rgba(21,47,88,.07)}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:14px;line-height:1.5}button,input,select,textarea{font:inherit}button{cursor:pointer}.topbar{height:76px;padding:0 max(24px,calc((100vw - 1320px)/2));display:flex;align-items:center;justify-content:space-between;background:var(--surface);border-bottom:1px solid var(--line);gap:16px}.brand{display:flex;align-items:center;gap:11px;text-decoration:none;color:var(--ink)}.brand-mark{display:grid;place-items:center;width:42px;height:42px;border-radius:13px;background:linear-gradient(135deg,#183c78,#3476ee);color:white;font-weight:800;letter-spacing:-1px}.brand strong{display:block;font-size:17px;letter-spacing:-.4px}.brand small{display:block;color:var(--blue);font-size:10px;font-weight:800;letter-spacing:2px}.top-actions{display:flex;align-items:center;gap:12px}.local-badge{display:flex;align-items:center;gap:7px;color:#527067;font-size:12px}.local-badge i{width:7px;height:7px;background:#2bb88a;border-radius:50%}.top-actions select{border:1px solid var(--line);border-radius:9px;padding:9px;background:#fff;color:var(--ink)}.icon-btn{height:38px;width:38px;border:1px solid var(--line);border-radius:10px;background:white;font-size:19px;color:var(--navy)}.shell{max-width:1320px;margin:0 auto;padding:28px 24px 36px}.hero{position:relative;overflow:hidden;min-height:220px;border-radius:22px;background:linear-gradient(110deg,#10264d,#153b76 65%,#2456a1);color:white;padding:35px 40px;display:flex;justify-content:space-between;align-items:center;box-shadow:var(--shadow)}.hero-copy{position:relative;z-index:1;max-width:680px}.eyebrow,.step-label{font-size:10px;font-weight:800;letter-spacing:1.7px;color:#a8c6ff}.hero h1{font-size:clamp(27px,3.1vw,40px);line-height:1.13;letter-spacing:-1.2px;margin:12px 0}.hero p{color:#d0ddf4;max-width:620px;font-size:15px;margin:0 0 18px}.hero-tags{display:flex;flex-wrap:wrap;gap:8px}.hero-tags span{border:1px solid #ffffff32;background:#ffffff0d;padding:6px 10px;border-radius:30px;font-size:11px;color:#e1eaff}.hero-art{position:relative;width:255px;height:170px;flex-shrink:0;margin-right:25px}.paper-card{position:absolute;top:17px;left:50px;width:145px;height:145px;background:#fff;border-radius:13px;padding:18px 15px;transform:rotate(5deg);box-shadow:0 15px 45px #071b3b65}.paper-line{height:5px;background:#dce6f6;border-radius:4px;width:78%;margin:8px 0}.paper-line.wide{width:100%;background:#a9c4f7}.paper-line.mid{width:60%}.paper-line.short{width:43%}.paper-chart{height:34px;display:flex;align-items:end;gap:5px;margin:12px 0}.paper-chart b{display:block;width:14px;border-radius:4px 4px 0 0;background:#4b7ee0;height:65%}.paper-chart b:nth-child(2){height:100%;background:#78a2f5}.paper-chart b:nth-child(3){height:46%}.paper-chart b:nth-child(4){height:78%;background:#2d5fbc}.paper-chart b:nth-child(5){height:55%}.orb{position:absolute;border:1px solid #ffffff26;border-radius:50%}.orb-one{width:175px;height:175px;right:-20px;top:-18px}.orb-two{width:220px;height:220px;right:0;top:-42px}.spark{position:absolute;right:15px;top:15px;font-size:27px;color:#b5d0ff}.workspace-grid{display:grid;grid-template-columns:245px minmax(0,1fr);gap:22px;margin-top:22px;align-items:start}.sidebar,.main-panel,.bottom-note{background:var(--surface);border:1px solid var(--line);border-radius:17px;box-shadow:var(--shadow)}.sidebar{padding:17px 12px;position:sticky;top:16px}.side-heading{padding:7px 10px 15px;color:#92a0b5;font-size:10px;font-weight:800;letter-spacing:1.3px}.nav-item{width:100%;display:flex;align-items:center;gap:12px;border:0;background:transparent;color:#66758d;text-align:left;padding:13px 10px;border-radius:10px;margin:2px 0}.nav-item span{font-size:11px;color:#94a3b8;font-weight:800}.nav-item b{font-size:12px;font-weight:650}.nav-item.active{background:var(--soft);color:var(--navy)}.nav-item.active span{color:var(--blue)}.side-note{display:flex;gap:10px;margin:26px 4px 3px;padding:13px 10px;background:#f7f9fd;border-radius:11px}.shield{width:25px;height:25px;display:grid;place-items:center;background:#dcf6ed;color:#148366;border-radius:8px;flex-shrink:0}.side-note b{font-size:11px}.side-note p{font-size:10px;color:var(--muted);line-height:1.5;margin:4px 0 0}.main-panel{min-width:0;padding:28px}.tab-panel{display:none;animation:fadeIn 0.2s ease-in-out}.tab-panel.active{display:block}@keyframes fadeIn{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}.section-head{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;margin-bottom:25px}.section-head h2{margin:6px 0 5px;font-size:25px;letter-spacing:-.7px}.section-head p{margin:0;color:var(--muted);font-size:12px}.status-pill{background:#edf4ff;color:#2e5ca7;border:1px solid #dbe8ff;border-radius:30px;padding:7px 10px;font-size:10px;font-weight:750;white-space:nowrap}.form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.field{display:flex;flex-direction:column;gap:7px;min-width:0}.field>span{font-size:12px;font-weight:700;color:#34445d}.field input,.field select,.field textarea{width:100%;border:1px solid #dce4ef;background:#fbfcfe;border-radius:9px;padding:11px 12px;outline:none;color:var(--ink);min-height:42px;transition:border .15s,box-shadow .15s}.field textarea{resize:vertical;line-height:1.6}.field input:focus,.field select:focus,.field textarea:focus{border-color:#6d99ed;box-shadow:0 0 0 3px #2d6ce719;background:white}.field input::placeholder,.field textarea::placeholder{color:#a1adbd}.span-2{grid-column:span 2}.form-footer{display:flex;justify-content:space-between;align-items:center;gap:18px;margin-top:23px;padding-top:20px;border-top:1px solid var(--line)}.helper{font-size:11px;color:#8491a4;line-height:1.55}.primary-btn,.secondary-btn,.ghost-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border-radius:9px;padding:11px 15px;font-size:12px;font-weight:750;transition:transform .15s,background .15s;border:1px solid transparent}.primary-btn{background:linear-gradient(135deg,#2d67d6,#1e50ad);color:#fff;box-shadow:0 6px 14px #2864d726}.primary-btn:hover{transform:translateY(-1px);background:#194a9e}.primary-btn b{font-size:17px;font-weight:400}.secondary-btn{background:#f1f5fc;color:#274978;border-color:#e0e9f7}.secondary-btn:hover{background:#e6efff}.ghost-btn{background:transparent;color:#536985;border-color:#e0e7f1}.editor-toolbar,.export-row{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:18px}.editor-field{margin-top:16px}.editor-field textarea{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:13px;line-height:1.6;min-height:380px}.export-row{margin-top:17px;margin-bottom:12px}.warning-box{padding:14px 16px;border:1px solid #f3dfad;background:#fff9e9;border-radius:11px;margin-bottom:21px}.warning-box b{font-size:12px;color:#855b11}.warning-box p{font-size:11px;line-height:1.6;color:#856c3d;margin:5px 0 0}.key-actions{display:flex;flex-wrap:wrap;align-items:center;gap:10px}.checkline{display:flex;gap:8px;align-items:center;margin-right:auto;font-size:11px;color:#64748b}.checkline input{accent-color:var(--blue)}.status-message{margin-top:14px;font-size:12px;color:var(--green);min-height:18px}.status-message.error{color:#c24141}.provider-info{margin-top:14px;padding:16px;border-radius:11px;background:#f7f9fd;border:1px solid var(--line)}.provider-info h3{font-size:12px;margin:0 0 8px}.provider-info p{font-size:11px;line-height:1.8;margin:0 0 6px;color:#52637c}.provider-info code{background:#e8eef8;border-radius:4px;padding:2px 4px}.provider-info small{font-size:10px;color:#8491a4}.prompt-meta{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}.prompt-meta span{font-size:10px;padding:6px 9px;border-radius:6px;background:#edf3ff;color:#315ca2}.bottom-note{display:flex;gap:13px;padding:17px 20px;margin-top:22px}.note-icon{width:27px;height:27px;border-radius:9px;background:#e9f1ff;color:#3164bb;display:grid;place-items:center;font-weight:800;flex-shrink:0}.bottom-note b{font-size:12px}.bottom-note p{font-size:11px;color:var(--muted);margin:4px 0 0;line-height:1.6}footer{max-width:1320px;padding:0 24px 26px;margin:0 auto;display:flex;justify-content:space-between;color:#93a0b2;font-size:10px}.toast{position:fixed;right:22px;bottom:22px;max-width:min(400px,calc(100vw - 44px));background:#142c52;color:white;border-radius:10px;padding:13px 16px;box-shadow:0 12px 35px #142c5233;opacity:0;pointer-events:none;transform:translateY(10px);transition:.2s;z-index:10;font-size:12px}.toast.show{opacity:1;transform:translateY(0)}.hidden{display:none!important}.dark{--ink:#e8eef8;--muted:#9aabc2;--line:#263b58;--surface:#13233a;--bg:#0b1729;--soft:#1d3558;--shadow:0 14px 40px rgba(0,0,0,.16)}.dark .topbar,.dark .top-actions select,.dark .icon-btn,.dark .field input,.dark .field select,.dark .field textarea{background:#13233a;color:var(--ink);border-color:#2b3d57}.dark .side-note,.dark .provider-info{background:#182b44}.dark .warning-box{background:#332b1a;border-color:#62502b}.dark .warning-box p,.dark .warning-box b{color:#e6cb8e}.dark .secondary-btn{background:#1b3454;color:#d8e7ff;border-color:#2c4668}.dark .ghost-btn{color:#bdcce1;border-color:#2c4668}.dark .status-pill,.dark .prompt-meta span{background:#1b3454;color:#bcd3ff;border-color:#2a466b}.dark .field>span{color:#c8d5e7}.dark .hero{box-shadow:none}
+@media(max-width:900px){.workspace-grid{grid-template-columns:1fr}.sidebar{position:static;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:4px;padding:10px}.side-heading,.side-note{display:none}.nav-item{justify-content:center;padding:12px 5px;gap:6px}.nav-item b{font-size:10px}.hero-art{opacity:.7;margin-right:-25px}.main-panel{padding:23px}}@media(max-width:620px){.topbar{height:auto;min-height:68px;padding:12px 15px}.local-badge{display:none}.top-actions{gap:7px}.top-actions select{max-width:112px;padding:8px 5px;font-size:11px}.shell{padding:15px 12px 25px}.hero{padding:26px 22px;min-height:230px;border-radius:17px}.hero h1{font-size:29px;max-width:330px}.hero p{font-size:13px;max-width:290px}.hero-art{position:absolute;right:-78px;bottom:-20px;opacity:.18}.workspace-grid{margin-top:14px;gap:13px}.sidebar{grid-template-columns:repeat(2,minmax(0,1fr))}.nav-item{justify-content:flex-start}.nav-item b{font-size:11px}.main-panel{padding:19px 15px}.section-head h2{font-size:22px}.section-head p{max-width:300px}.status-pill{display:none}.form-grid{grid-template-columns:1fr;gap:15px}.span-2{grid-column:span 1}.form-footer{align-items:stretch;flex-direction:column}.form-footer .primary-btn{width:100%}.key-actions{align-items:stretch;flex-direction:column}.checkline{margin:0}.key-actions button{width:100%}.editor-toolbar>*{flex:1}.export-row>*{flex:1}.bottom-note{padding:14px}.bottom-note p{font-size:10px}footer{padding:0 14px 20px;gap:14px;flex-direction:column}.provider-grid{grid-template-columns:1fr}}@media print{body{background:white;color:#111}.topbar,.hero,.sidebar,.section-head,.editor-toolbar,.export-row,.bottom-note,footer,.helper,.toast{display:none!important}.shell{padding:0;max-width:none}.workspace-grid{display:block;margin:0}.main-panel{border:0;box-shadow:none;padding:0}.tab-panel{display:none!important}#tab-editor{display:block!important}.field input{border:0!important;background:white!important;font-weight:bold;padding:0}.editor-field textarea{border:0!important;background:white!important;color:#111!important;resize:none;min-height:0;overflow:visible;white-space:pre-wrap;font-family:Georgia,serif;font-size:12pt;line-height:1.65;padding:0}.field>span{display:none}.field:not(.editor-field){margin-bottom:15px}#docTitle{font-size:20pt!important} }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/docx@8.5.0/build/index.umd.js"></script>
+</head>
+<body>
+<header class="topbar"><a class="brand" href="#"><span class="brand-mark">QR</span><span><strong>QazResearch</strong><small>AI PRO MAX</small></span></a><div class="top-actions"><span class="local-badge"><i></i><span data-i18n="localOnly">Браузерде сақталады</span></span><select id="uiLanguage" aria-label="Interface language"><option value="kk">Қазақша</option><option value="ru">Русский</option><option value="en">English</option><option value="uzc">Ўзбекча</option><option value="uzl">O‘zbekcha</option></select><button id="themeToggle" class="icon-btn" title="Theme" aria-label="Theme">◐</button></div></header>
+<main class="shell">
+  <section class="hero"><div class="hero-copy"><span class="eyebrow" data-i18n="eyebrow">ҒЫЛЫМИ ЖҰМЫСҚА АРНАЛҒАН AI ЗЕРТХАНАСЫ</span><h1 data-i18n="heroTitle">Идеядан — ғылыми жобаға дейін.</h1><p data-i18n="heroText">Жасқа, пәнге, зерттеу түріне және таңдалған тілге бейімделген жұмыс кеңістігі.</p><div class="hero-tags"><span>Age-aware prompts</span><span>Multi-AI</span><span>DOCX + PDF</span></div></div><div class="hero-art" aria-hidden="true"><div class="orb orb-one"></div><div class="orb orb-two"></div><div class="paper-card"><div class="paper-line wide"></div><div class="paper-line"></div><div class="paper-line mid"></div><div class="paper-chart"><b></b><b></b><b></b><b></b><b></b></div><div class="paper-line wide"></div><div class="paper-line short"></div></div><div class="spark">✦</div></div></section>
+  <div class="workspace-grid">
+    <aside class="sidebar"><div class="side-heading" data-i18n="workspace">ЖҰМЫС КЕҢІСТІГІ</div><button class="nav-item active" data-tab="project"><span>01</span><b data-i18n="projectSetup">Жоба параметрлері</b></button><button class="nav-item" data-tab="editor"><span>02</span><b data-i18n="editorTab">Жұмыс редакторы</b></button><button class="nav-item" data-tab="ai"><span>03</span><b data-i18n="aiSettings">AI баптаулары</b></button><button class="nav-item" data-tab="prompts"><span>04</span><b data-i18n="promptPreview">Промпт құрамы</b></button><div class="side-note"><span class="shield">✓</span><div><b data-i18n="privacyTitle">Жергілікті сақтау</b><p data-i18n="privacyText">Жоба осы браузерде сақталады. Бұл аккаунттар арасындағы синхрондау емес.</p></div></div></aside>
+    <section class="main-panel">
+      <section class="tab-panel active" id="tab-project"><div class="section-head"><div><span class="step-label" data-i18n="stepOne">ҚАДАМ 1</span><h2 data-i18n="projectTitle">Зерттеу профилі</h2><p data-i18n="projectSubtitle">Нақты мәліметтер промпттың мазмұны мен күрделілігін анықтайды.</p></div><span class="status-pill" data-i18n="customPrompt">Жеке промпт</span></div>
+        <form id="projectForm"><div class="form-grid">
+          <label class="field span-2"><span data-i18n="topicLabel">Зерттеу тақырыбы *</span><input id="topic" required maxlength="240" placeholder="Мысалы: NeoVote цифрлық дауыс беру жүйесінің прототипі"></label>
+          <label class="field"><span data-i18n="ageLabel">Жасы *</span><input id="age" type="number" min="6" max="100" value="14" required></label>
+          <label class="field"><span data-i18n="gradeLabel">Сынып / курс</span><input id="grade" maxlength="50" placeholder="8-сынып"></label>
+          <label class="field"><span data-i18n="subjectLabel">Пәні *</span><select id="subject" required><option value="informatics">Информатика</option><option value="biology">Биология</option><option value="chemistry">Химия</option><option value="physics">Физика</option><option value="math">Математика</option><option value="history">Тарих</option><option value="language">Тіл және әдебиет</option><option value="geography">География / экология</option><option value="economics">Экономика / кәсіпкерлік</option><option value="engineering">Инженерия / робототехника</option><option value="social">Әлеуметтік ғылымдар</option><option value="other">Басқа пән</option></select></label>
+          <label class="field"><span data-i18n="workTypeLabel">Жұмыс түрі</span><select id="workType"><option value="research">Ғылыми зерттеу</option><option value="project">Ғылыми жоба</option><option value="report">Баяндама</option><option value="essay">Эссе / реферат</option><option value="experiment">Тәжірибелік жұмыс</option><option value="prototype">Бағдарламалық прототип</option></select></label>
+          <label class="field"><span data-i18n="outputLabel">Жұмыс тілі *</span><select id="outputLanguage"><option value="kk">Қазақша — кириллица</option><option value="ru">Русский</option><option value="en">English</option><option value="uzc">Ўзбекча — кириллица</option><option value="uzl">O‘zbekcha — lotin</option></select></label>
+          <label class="field"><span data-i18n="lengthLabel">Көлемі</span><select id="length"><option value="short">Қысқа (5–7 бет)</option><option value="medium" selected>Орташа (8–12 бет)</option><option value="long">Толық (13–20 бет)</option><option value="custom">Өзім көрсетемін</option></select></label>
+          <label class="field hidden" id="customPagesWrap"><span data-i18n="pagesLabel">Бет саны</span><input id="customPages" type="number" min="2" max="100" value="15"></label>
+          <label class="field"><span data-i18n="levelLabel">Күрделілік</span><select id="complexity"><option value="accessible">Түсінікті, базалық</option><option value="balanced" selected>Теңгерімді</option><option value="advanced">Тереңдетілген</option></select></label>
+          <label class="field"><span data-i18n="approachLabel">Жұмысқа бейімдеу</span><select id="approach"><option value="guided">Қадамдап бағыттау</option><option value="independent" selected>Өзіндік зерттеу</option><option value="practical">Практикаға басымдық</option><option value="analytical">Талдау мен салыстыру</option></select></label>
+          <label class="field span-2"><span data-i18n="requirementsLabel">Мұғалімнің талабы / байқау ережесі</span><textarea id="requirements" rows="3" placeholder="Міндетті бөлімдер, рәсімдеу талаптары, бағалау критерийлері..."></textarea></label>
+          <label class="field span-2"><span data-i18n="studentNotesLabel">Оқушының өз идеясы, тәжірибесі немесе нәтижелері</span><textarea id="studentNotes" rows="3" placeholder="Өз бақылауыңыз, кодтың нәтижесі, өлшеу, сауалнама, тәжірибе... ойдан нәтиже қоспау үшін маңызды."></textarea></label>
+        </div><div class="form-footer"><span class="helper" data-i18n="requiredNote">* Міндетті өрістер. Нәтижелер берілмесе, AI оларды ойдан шығармауы керек.</span><button type="submit" class="primary-btn"><span data-i18n="buildPrompt">Жеке промпт құрастыру</span><b>↗</b></button></div></form>
+      </section>
+      <section class="tab-panel" id="tab-editor"><div class="section-head"><div><span class="step-label" data-i18n="stepTwo">ҚАДАМ 2</span><h2 data-i18n="editorTitle">Ғылыми жұмыс редакторы</h2><p data-i18n="editorSubtitle">AI нәтижесін осында өңдеңіз. Өзгерістер браузерде сақталады.</p></div><span class="status-pill" id="saveStatus" data-i18n="savedLocal">Жергілікті жоба</span></div><div class="editor-toolbar"><button class="secondary-btn" id="generateBtn" data-i18n="generateBtn">AI арқылы жазу</button><button class="secondary-btn" id="reviseBtn" data-i18n="reviseBtn">Мәтінді жақсарту</button><button class="secondary-btn" id="outlineBtn" data-i18n="outlineBtn">Жоспар құру</button><button class="secondary-btn" id="paraphraseBtn">✨ Рефраз / Антиплагиат</button><button class="secondary-btn" id="bibBtn">📚 Әдебиеттер тізімі</button><button class="secondary-btn" id="speechBtn">🎤 Қорғау сөзі</button><button class="secondary-btn" id="tableBtn">📊 Кесте қосу</button></div><label class="field"><span data-i18n="documentTitle">Құжат атауы</span><input id="docTitle" value="Ғылыми жоба"></label><label class="field editor-field"><span data-i18n="documentBody">Жұмыс мәтіні</span><textarea id="documentBody" rows="22" placeholder="Жоспар немесе ғылыми жұмыстың мәтіні осы жерде пайда болады..."></textarea></label><div class="export-row"><button class="primary-btn" id="docxBtn">↓ <span data-i18n="exportDocx">Word (.docx) экспорттау</span></button><button class="secondary-btn" id="pdfBtn">↗ <span data-i18n="exportPdf">PDF / Басып шығару</span></button><button class="ghost-btn" id="copyBtn" data-i18n="copyText">Мәтінді көшіру</button></div><p class="helper" data-i18n="pdfHelp">PDF батырмасы басып шығару терезесін ашады. Принтер тізімінен “Save as PDF / PDF ретінде сақтау” таңдаңыз.</p></section>
+      <section class="tab-panel" id="tab-ai"><div class="section-head"><div><span class="step-label" data-i18n="settingsStep">БАПТАУ</span><h2 data-i18n="providerTitle">AI провайдері</h2><p data-i18n="providerSubtitle">API кілттері серверге жіберілмейді, бірақ API сұранымы кезінде провайдерге беріледі.</p></div><span class="status-pill">BYOK</span></div><div class="warning-box"><b data-i18n="securityWarningTitle">Қауіпсіздік ескертуі</b><p data-i18n="securityWarning">Браузерлік қосылымда API кілтін толық құпия сақтау мүмкін емес. Ортақ немесе жария компьютерде кілт енгізбеңіз. GitHub репозиторийіне кілт жазбаңыз. Бұл нұсқа жеке/сынақ қолдануға арналған.</p></div><div class="form-grid provider-grid"><label class="field"><span data-i18n="providerLabel">Провайдер</span><select id="provider"><option value="gemini">Google Gemini</option><option value="openai">OpenAI</option><option value="claude">Anthropic Claude</option><option value="grok">xAI Grok</option></select></label><label class="field"><span data-i18n="keyModeLabel">Кілт көзі</span><select id="keyMode"><option value="user">Пайдаланушының жеке кілті</option><option value="admin">Осы браузердегі әкімші кілті</option></select></label><label class="field span-2"><span data-i18n="apiKeyLabel">API кілті</span><input id="apiKey" type="password" autocomplete="off" placeholder="API key" spellcheck="false"></label><label class="field span-2"><span data-i18n="modelLabel">Модель атауы (өзгертуге болады)</span><input id="model" value="gemini-2.5-flash" placeholder="Provider model ID"></label><div class="span-2 key-actions"><label class="checkline"><input type="checkbox" id="rememberKey"><span data-i18n="rememberKey">Кілтті осы браузерде сақтау (ұсынылмайды)</span></label><button class="secondary-btn" id="saveAiBtn" data-i18n="saveAi">Баптауды сақтау</button><button class="ghost-btn" id="testAiBtn" data-i18n="testAi">Қосылымды тексеру</button></div></div><div id="providerStatus" class="status-message" role="status" aria-live="polite"></div><div class="provider-info"><h3 data-i18n="providerModels">Модельге мысалдар</h3><p>Gemini: <code>gemini-2.5-flash</code> · OpenAI: <code>gpt-4.1-mini</code> · Claude: <code>claude-3-7-sonnet-latest</code> · Grok: <code>grok-3-mini</code></p><small data-i18n="modelNote">Модель атаулары өзгеруі мүмкін. Провайдер кабинетінде қолжетімді модель атауын тексеріп, қажет болса қолмен енгізіңіз.</small></div></section>
+      <section class="tab-panel" id="tab-prompts"><div class="section-head"><div><span class="step-label" data-i18n="stepThree">ҚАДАМ 3</span><h2 data-i18n="promptTitle">Жеке промпттың құрамы</h2><p data-i18n="promptSubtitle">Нұсқаулар ағылшынша құрастырылады, нәтиже таңдалған тілде жазылады.</p></div><span class="status-pill" data-i18n="englishCore">English prompt core</span></div><div class="prompt-meta" id="promptMeta"><span>14 years</span><span>Informatics</span><span>Kazakh Cyrillic</span></div><label class="field"><span data-i18n="systemPromptLabel">System instructions (English)</span><textarea id="systemPrompt" rows="15" readonly></textarea></label><label class="field"><span data-i18n="userPromptLabel">Research task (English)</span><textarea id="userPrompt" rows="12" readonly></textarea></label><div class="export-row"><button class="secondary-btn" id="copyPromptBtn" data-i18n="copyPrompt">Промптты көшіру</button><button class="ghost-btn" id="refreshPromptBtn" data-i18n="refreshPrompt">Қайта құрастыру</button></div></section>
+    </section>
+  </div>
+  <section class="bottom-note"><div class="note-icon">i</div><div><b data-i18n="integrityTitle">Ғылыми адалдық</b><p data-i18n="integrityText">AI көмекші ретінде пайдаланылады. Нақты тәжірибе, өлшеу, сауалнама және әдебиеттерді тексермей ойдан қоспаңыз. Антиплагиат нәтижесіне кепілдік берілмейді.</p></div></section>
+</main><div class="toast" id="toast" role="status" aria-live="polite"></div><footer><span>QazResearch AI PRO MAX</span><span data-i18n="footerText">Оқу мен зерттеуге арналған құрал · Local-first</span></footer>
+
+<script type="module">
+const translations = {
+  kk: {
+    localOnly: "Браузерде сақталады",
+    workspace: "ЖҰМЫС КЕҢІСТІГІ",
+    projectSetup: "Жоба параметрлері",
+    editorTab: "Жұмыс редакторы",
+    aiSettings: "AI баптаулары",
+    promptPreview: "Промпт құрамы",
+    privacyTitle: "Жергілікті сақтау",
+    privacyText: "Жоба осы браузерде сақталады. Бұл аккаунттар арасындағы синхрондау емес.",
+    eyebrow: "ҒЫЛЫМИ ЖҰМЫСҚА АРНАЛҒАН AI ЗЕРТХАНАСЫ",
+    heroTitle: "Идеядан — ғылыми жобаға дейін.",
+    heroText: "Жасқа, пәнге, зерттеу түріне және таңдалған тілге бейімделген жұмыс кеңістігі.",
+    stepOne: "ҚАДАМ 1",
+    projectTitle: "Зерттеу профилі",
+    projectSubtitle: "Нақты мәліметтер промпттың мазмұны мен күрделілігін анықтайды.",
+    customPrompt: "Жеке промпт",
+    topicLabel: "Зерттеу тақырыбы *",
+    ageLabel: "Жасы *",
+    gradeLabel: "Сынып / курс",
+    subjectLabel: "Пәні *",
+    workTypeLabel: "Жұмыс түрі",
+    outputLabel: "Жұмыс тілі *",
+    lengthLabel: "Көлемі",
+    pagesLabel: "Бет саны",
+    levelLabel: "Күрделілік",
+    approachLabel: "Жұмысқа бейімдеу",
+    requirementsLabel: "Мұғалімнің талабы / байқау ережесі",
+    studentNotesLabel: "Оқушының өз идеясы, тәжірибесі немесе нәтижелері",
+    requiredNote: "* Міндетті өрістер. Нәтижелер берілмесе, AI оларды ойдан шығармауы керек.",
+    buildPrompt: "Жеке промпт құрастыру",
+    stepTwo: "ҚАДАМ 2",
+    editorTitle: "Ғылыми жұмыс редакторы",
+    editorSubtitle: "AI нәтижесін осында өңдеңіз. Өзгерістер браузерде сақталады.",
+    savedLocal: "Жергілікті жоба",
+    generateBtn: "AI арқылы жазу",
+    reviseBtn: "Мәтінді жақсарту",
+    outlineBtn: "Жоспар құру",
+    documentTitle: "Құжат атауы",
+    documentBody: "Жұмыс мәтіні",
+    exportDocx: "Word (.docx) экспорттау",
+    exportPdf: "PDF / Басып шығару",
+    copyText: "Мәтінді көшіру",
+    pdfHelp: "PDF батырмасы басып шығару терезесін ашады. Принтер тізімінен “Save as PDF / PDF ретінде сақтау” таңдаңыз.",
+    settingsStep: "БАПТАУ",
+    providerTitle: "AI провайдері",
+    providerSubtitle: "API кілттері серверге жіберілмейді, бірақ API сұранымы кезінде провайдерге беріледі.",
+    securityWarningTitle: "Қауіпсіздік ескертуі",
+    securityWarning: "Браузерлік қосылымда API кілтін толық құпия сақтау мүмкін емес. Ортақ немесе жария компьютерде кілт енгізбеңіз. GitHub репозиторийіне кілт жазбаңыз. Бұл нұсқа жеке/сынақ қолдануға арналған.",
+    providerLabel: "Провайдер",
+    keyModeLabel: "Кілт көзі",
+    apiKeyLabel: "API кілті",
+    modelLabel: "Модель атауы (өзгертуге болады)",
+    rememberKey: "Кілтті осы браузерде сақтау (ұсынылмайды)",
+    saveAi: "Баптауды сақтау",
+    testAi: "Қосылымды тексеру",
+    providerModels: "Модельге мысалдар",
+    modelNote: "Модель атаулары өзгеруі мүмкін. Провайдер кабинетінде қолжетімді модель атауын тексеріп, қажет болса қолмен енгізіңіз.",
+    stepThree: "ҚАДАМ 3",
+    promptTitle: "Жеке промпттың құрамы",
+    promptSubtitle: "Нұсқаулар ағылшынша құрастырылады, нәтиже таңдалған тілде жазылады.",
+    englishCore: "English prompt core",
+    systemPromptLabel: "System instructions (English)",
+    userPromptLabel: "Research task (English)",
+    copyPrompt: "Промптты көшіру",
+    refreshPrompt: "Қайта құрастыру",
+    integrityTitle: "Ғылыми адалдық",
+    integrityText: "AI көмекші ретінде пайдаланылады. Нақты тәжірибе, өлшеу, сауалнама және әдебиеттерді тексермей ойдан қоспаңыз. Антиплагиат нәтижесіне кепілдік берілмейді.",
+    footerText: "Оқу мен зерттеуге арналған құрал · Local-first",
+    saved: "Сақталды",
+    topicRequired: "Зерттеу тақырыбын енгізіңіз",
+    keyMissing: "API кілтін енгізіңіз",
+    emptyBody: "Мәтін бос тұр",
+    working: "Жазылуда...",
+    connectionOk: "Қосылым сәтті",
+    error: "Қате",
+    done: "Дайын",
+    noDocx: "docx кітапханасы жүктелмеді",
+    noTitle: "Ғылыми жоба",
+    promptReady: "Промпт жаңартылды"
+  },
+  ru: {
+    localOnly: "Сохраняется в браузере",
+    workspace: "РАБОЧЕЕ ПРОСТРАНСТВО",
+    projectSetup: "Параметры проекта",
+    editorTab: "Редактор работы",
+    aiSettings: "Настройки AI",
+    promptPreview: "Состав промпта",
+    privacyTitle: "Локальное хранение",
+    privacyText: "Проект сохраняется в этом браузере. Это не синхронизация между аккаунтами.",
+    eyebrow: "AI ЛАБОРАТОРИЯ ДЛЯ НАУЧНЫХ РАБОТ",
+    heroTitle: "От идеи — к научному проекту.",
+    heroText: "Рабочее пространство, адаптированное под возраст, предмет, тип исследования и выбранный язык.",
+    stepOne: "ШАГ 1",
+    projectTitle: "Профиль исследования",
+    projectSubtitle: "Точные данные определяют содержание и сложность промпта.",
+    customPrompt: "Персональный промпт",
+    topicLabel: "Тема исследования *",
+    ageLabel: "Возраст *",
+    gradeLabel: "Класс / курс",
+    subjectLabel: "Предмет *",
+    workTypeLabel: "Тип работы",
+    outputLabel: "Язык работы *",
+    lengthLabel: "Объем",
+    pagesLabel: "Количество страниц",
+    levelLabel: "Сложность",
+    approachLabel: "Подход к работе",
+    requirementsLabel: "Требования учителя / правила конкурса",
+    studentNotesLabel: "Идея учащегося, опыт или результаты",
+    requiredNote: "* Обязательные поля. Если результаты не указаны, AI не должен их выдумывать.",
+    buildPrompt: "Составить персональный промпт",
+    stepTwo: "ШАГ 2",
+    editorTitle: "Редактор научной работы",
+    editorSubtitle: "Редактируйте результат AI здесь. Изменения сохраняются в браузере.",
+    savedLocal: "Локальный проект",
+    generateBtn: "Написать через AI",
+    reviseBtn: "Улучшить текст",
+    outlineBtn: "Составить план",
+    documentTitle: "Название документа",
+    documentBody: "Текст работы",
+    exportDocx: "Экспорт в Word (.docx)",
+    exportPdf: "PDF / Печать",
+    copyText: "Копировать текст",
+    pdfHelp: "Кнопка PDF открывает окно печати. Выберите в списке принтеров «Сохранить как PDF».",
+    settingsStep: "НАСТРОЙКА",
+    providerTitle: "AI провайдер",
+    providerSubtitle: "API-ключи не отправляются на сервер, но передаются провайдеру при запросе.",
+    securityWarningTitle: "Предупреждение безопасности",
+    securityWarning: "В браузере невозможно сохранить API-ключ в строгом секрете. Не вводите ключ на общедоступных компьютерах. Не сохраняйте ключ в публичных репозиториях GitHub.",
+    providerLabel: "Провайдер",
+    keyModeLabel: "Источник ключа",
+    apiKeyLabel: "API-ключ",
+    modelLabel: "Имя модели (можно изменить)",
+    rememberKey: "Сохранить ключ в этом браузере (не рекомендуется)",
+    saveAi: "Сохранить настройки",
+    testAi: "Проверить соединение",
+    providerModels: "Примеры моделей",
+    modelNote: "Имена моделей могут меняться. Проверьте актуальное имя в кабинете провайдера.",
+    stepThree: "ШАГ 3",
+    promptTitle: "Состав персонального промпта",
+    promptSubtitle: "Инструкции формируются на английском, результат пишется на выбранном языке.",
+    englishCore: "English prompt core",
+    systemPromptLabel: "System instructions (English)",
+    userPromptLabel: "Research task (English)",
+    copyPrompt: "Копировать промпт",
+    refreshPrompt: "Пересоздать",
+    integrityTitle: "Научная честность",
+    integrityText: "AI используется как помощник. Не придумывайте реальные эксперименты, измерения и литературу без проверки. Гарантия прохождения антиплагиата не предоставляется.",
+    footerText: "Инструмент для учебы и исследований · Local-first",
+    saved: "Сохранено",
+    topicRequired: "Введите тему исследования",
+    keyMissing: "Введите API-ключ",
+    emptyBody: "Текст работы пуст",
+    working: "Пишется...",
+    connectionOk: "Соединение успешно",
+    error: "Ошибка",
+    done: "Готово",
+    noDocx: "Библиотека docx не загружена",
+    noTitle: "Научный проект",
+    promptReady: "Промпт обновлен"
+  },
+  en: {
+    localOnly: "Saved locally",
+    workspace: "WORKSPACE",
+    projectSetup: "Project Setup",
+    editorTab: "Editor",
+    aiSettings: "AI Settings",
+    promptPreview: "Prompt Preview",
+    privacyTitle: "Local storage",
+    privacyText: "The project is saved in this browser. This is not cross-account cloud sync.",
+    eyebrow: "AI RESEARCH LABORATORY",
+    heroTitle: "From idea to science project.",
+    heroText: "A workspace tailored to age, subject, research type, and target language.",
+    stepOne: "STEP 1",
+    projectTitle: "Research Profile",
+    projectSubtitle: "Precise details define prompt content and complexity.",
+    customPrompt: "Custom Prompt",
+    topicLabel: "Research Topic *",
+    ageLabel: "Age *",
+    gradeLabel: "Grade / Course",
+    subjectLabel: "Subject *",
+    workTypeLabel: "Work Type",
+    outputLabel: "Output Language *",
+    lengthLabel: "Length",
+    pagesLabel: "Page Count",
+    levelLabel: "Complexity",
+    approachLabel: "Approach",
+    requirementsLabel: "Teacher Requirements / Rules",
+    studentNotesLabel: "Student's Idea, Experiments, or Results",
+    requiredNote: "* Required fields. If results are omitted, AI must not fabricate them.",
+    buildPrompt: "Build Custom Prompt",
+    stepTwo: "STEP 2",
+    editorTitle: "Research Editor",
+    editorSubtitle: "Edit AI results here. Changes are saved automatically.",
+    savedLocal: "Local Project",
+    generateBtn: "Write with AI",
+    reviseBtn: "Improve Text",
+    outlineBtn: "Create Outline",
+    documentTitle: "Document Title",
+    documentBody: "Document Body",
+    exportDocx: "Export Word (.docx)",
+    exportPdf: "PDF / Print",
+    copyText: "Copy Text",
+    pdfHelp: "The PDF button opens the print dialog. Choose 'Save as PDF' from your printer options.",
+    settingsStep: "SETTINGS",
+    providerTitle: "AI Provider",
+    providerSubtitle: "API keys are never sent to a backend server, only to the provider during requests.",
+    securityWarningTitle: "Security Notice",
+    securityWarning: "Browser storage cannot guarantee total API key secrecy. Do not use on public computers or commit keys to public repositories.",
+    providerLabel: "Provider",
+    keyModeLabel: "Key Source",
+    apiKeyLabel: "API Key",
+    modelLabel: "Model Name (editable)",
+    rememberKey: "Remember key in this browser (not recommended)",
+    saveAi: "Save Settings",
+    testAi: "Test Connection",
+    providerModels: "Model Examples",
+    modelNote: "Model IDs may change. Check your provider's dashboard for active IDs.",
+    stepThree: "STEP 3",
+    promptTitle: "Prompt Composition",
+    promptSubtitle: "Instructions are compiled in English; the response is generated in your target language.",
+    englishCore: "English prompt core",
+    systemPromptLabel: "System instructions (English)",
+    userPromptLabel: "Research task (English)",
+    copyPrompt: "Copy Prompt",
+    refreshPrompt: "Rebuild Prompt",
+    integrityTitle: "Research Integrity",
+    integrityText: "AI is used as an assistant. Do not invent real experiments, measurements, or references. Plagiarism pass is not guaranteed.",
+    footerText: "Tool for learning and research · Local-first",
+    saved: "Saved",
+    topicRequired: "Please enter a research topic",
+    keyMissing: "Please enter your API key",
+    emptyBody: "Document body is empty",
+    working: "Writing...",
+    connectionOk: "Connection OK",
+    error: "Error",
+    done: "Done",
+    noDocx: "docx library is missing",
+    noTitle: "Research Project",
+    promptReady: "Prompt is ready"
+  },
+  uzc: {
+    localOnly: "Браузерда сақланади",
+    workspace: "ИШ МАЙДОНИ",
+    projectSetup: "Лойиҳа параметрлари",
+    editorTab: "Иш муҳаррири",
+    aiSettings: "AI созламалари",
+    promptPreview: "Промпт таркиби",
+    privacyTitle: "Маҳаллий сақлаш",
+    privacyText: "Лойиҳа ушбу браузерда сақланади. Бу аккаунтлар ўртасидаги синхронизация эмас.",
+    eyebrow: "ИЛМИЙ ИШЛАР УЧУН AI ЛАБОРАТОРИЯСИ",
+    heroTitle: "Ғоядан — илмий лойиҳагача.",
+    heroText: "Ёш, фан, тадқиқот тури ва танланган тилга мослаштирилган иш майдони.",
+    stepOne: "1-ҚАДАМ",
+    projectTitle: "Тадқиқот профили",
+    projectSubtitle: "Аниқ маълумотлар промпт мазмуни ва мураккаблигини белгилайди.",
+    customPrompt: "Шахсий промпт",
+    topicLabel: "Тадқиқот мавзуси *",
+    ageLabel: "Ёши *",
+    gradeLabel: "Синф / курс",
+    subjectLabel: "Фани *",
+    workTypeLabel: "Иш тури",
+    outputLabel: "Иш тили *",
+    lengthLabel: "Ҳажми",
+    pagesLabel: "Бетлар сони",
+    levelLabel: "Мураккаблик",
+    approachLabel: "Ёндашув",
+    requirementsLabel: "Ўқитувчи талаби / танлов қоидаси",
+    studentNotesLabel: "Ўқувчининг ўз ғояси, тажрибаси ёки натижалари",
+    requiredNote: "* Мажбурий майдонлар. Натижалар берилмаса, AI уларни ўйлаб топмаслиги керак.",
+    buildPrompt: "Шахсий промпт тузиш",
+    stepTwo: "2-ҚАДАМ",
+    editorTitle: "Илмий иш муҳаррири",
+    editorSubtitle: "AI натижасини шу ерда таҳрирланг. Ўзгаришлар браузерда сақланади.",
+    savedLocal: "Маҳаллий лойиҳа",
+    generateBtn: "AI орқали ёзиш",
+    reviseBtn: "Матнни яхшилаш",
+    outlineBtn: "Режа тузиш",
+    documentTitle: "Ҳужжат номи",
+    documentBody: "Иш матни",
+    exportDocx: "Word (.docx) экспорт қилиш",
+    exportPdf: "PDF / Чоп этиш",
+    copyText: "Матндан nusxa олиш",
+    pdfHelp: "PDF тугмаси чоп этиш ойнасини очади. Принтерлар рўйхатидан “Save as PDF”ни танланг.",
+    settingsStep: "СОЗЛАМА",
+    providerTitle: "AI провайдери",
+    providerSubtitle: "API калитlari серверга юборилмайди, фақат сўров вақтида провайдерга берилади.",
+    securityWarningTitle: "Хавфсизлик огоҳлантириши",
+    securityWarning: "Браузерда API калитини тўлиқ сир сақлаб бўлмайди. Умумий ёки жамоат компютерида калит киритманг.",
+    providerLabel: "Провайдер",
+    keyModeLabel: "Калит манбаси",
+    apiKeyLabel: "API калити",
+    modelLabel: "Модель номи (ўзгартириш мумкин)",
+    rememberKey: "Калитни шу браузерда сақлаш (тавсия этилмайди)",
+    saveAi: "Созламани сақлаш",
+    testAi: "Алоқани текшириш",
+    providerModels: "Модель мисоллари",
+    modelNote: "Модель номлари ўзгариши мумкин. Провайдер кабинетида текширинг.",
+    stepThree: "3-ҚАДАМ",
+    promptTitle: "Шахсий промпт таркиби",
+    promptSubtitle: "Кўрсатмалар инглиз тилида тузилади, натижа танланган тилда ёзилади.",
+    englishCore: "English prompt core",
+    systemPromptLabel: "System instructions (English)",
+    userPromptLabel: "Research task (English)",
+    copyPrompt: "Промптдан нусха олиш",
+    refreshPrompt: "Қайта тузиш",
+    integrityTitle: "Илмий ҳалоллик",
+    integrityText: "AI ёрдамчи сифатида ишлатилади. Ҳақиқий тажриба ва ўлчовларни текширмасдан қўшманг.",
+    footerText: "Таълим ва тадқиқот учун восита · Local-first",
+    saved: "Сақланди",
+    topicRequired: "Тадқиқот мавзусини киритинг",
+    keyMissing: "API калитини киритинг",
+    emptyBody: "Матн бўш",
+    working: "Ёзилмоқда...",
+    connectionOk: "Алоқа муваффақиятли",
+    error: "Хатолик",
+    done: "Тайёр",
+    noDocx: "docx кутубхонаси юкланмади",
+    noTitle: "Илмий лойиҳа",
+    promptReady: "Промпт янгиланди"
+  },
+  uzl: {
+    localOnly: "Brauzerda saqlanadi",
+    workspace: "ISH MAYDONI",
+    projectSetup: "Loyiha parametrlari",
+    editorTab: "Ish muharriri",
+    aiSettings: "AI sozlamalari",
+    promptPreview: "Prompt tarkibi",
+    privacyTitle: "Mahalliy saqlash",
+    privacyText: "Loyiha ushbu brauzerda saqlanadi. Bu akkauntlar orasidagi sinxronizatsiya emas.",
+    eyebrow: "ILMIY ISHLAR UCHUN AI LABORATORIYASI",
+    heroTitle: "G‘oyadan — ilmiy loyihagacha.",
+    heroText: "Yosh, fan, tadqiqot turi va tanlangan tilga moslashtirilgan ish maydoni.",
+    stepOne: "1-QADAM",
+    projectTitle: "Tadqiqot profili",
+    projectSubtitle: "Aniq ma’lumotlar prompt mazmuni va murakkabligini belgilaydi.",
+    customPrompt: "Shaxsiy prompt",
+    topicLabel: "Tadqiqot mavzusi *",
+    ageLabel: "Yoshi *",
+    gradeLabel: "Sinf / kurs",
+    subjectLabel: "Fani *",
+    workTypeLabel: "Ish turi",
+    outputLabel: "Ish tili *",
+    lengthLabel: "Hajmi",
+    pagesLabel: "Betlar soni",
+    levelLabel: "Murakkablik",
+    approachLabel: "Yondashuv",
+    requirementsLabel: "O‘qituvchi talabi / tanlov qoidasi",
+    studentNotesLabel: "O‘quvchining o‘z g‘oyasi, tajribasi yoki natijalari",
+    requiredNote: "* Majburiy maydonlar. Natijalar berilmasa, AI ularni o‘ylab topmasligi kerak.",
+    buildPrompt: "Shaxsiy prompt tuzish",
+    stepTwo: "2-QADAM",
+    editorTitle: "Ilmiy ish muharriri",
+    editorSubtitle: "AI natijasini shu yerda tahrirlang. O‘zgarishlar brauzerda saqlanadi.",
+    savedLocal: "Mahalliy loyiha",
+    generateBtn: "AI orqali yozish",
+    reviseBtn: "Matnni yaxshilash",
+    outlineBtn: "Reja tuzish",
+    documentTitle: "Hujjat nomi",
+    documentBody: "Ish matni",
+    exportDocx: "Word (.docx) eksport qilish",
+    exportPdf: "PDF / Chop etish",
+    copyText: "Matndan nusxa olish",
+    pdfHelp: "PDF tugmasi chop etish oynasini ochadi. Printerlar ro‘yxatidan “Save as PDF”ni tanlang.",
+    settingsStep: "SOZLAMA",
+    providerTitle: "AI provayderi",
+    providerSubtitle: "API kalitlari serverga yuborilmaydi, faqat so‘rov vaqtida provayderga beriladi.",
+    securityWarningTitle: "Xavfsizlik ogohlantirishi",
+    securityWarning: "Brauzerda API kalitini to‘liq sir saqlab bo‘lmaydi. Umumiy yoki jamoat kompyuterida kalit kiritmang.",
+    providerLabel: "Provayder",
+    keyModeLabel: "Kalit manbai",
+    apiKeyLabel: "API kaliti",
+    modelLabel: "Model nomi (o‘zgartirish mumkin)",
+    rememberKey: "Kalitni shu brauzerda saqlash (tavsiya etilmaydi)",
+    saveAi: "Sozlamani saqlash",
+    testAi: "Aloqani tekshirish",
+    providerModels: "Model misollari",
+    modelNote: "Model nomlari o‘zgarishi mumkin. Provayder kabinetida tekshiring.",
+    stepThree: "3-QADAM",
+    promptTitle: "Shaxsiy prompt tarkibi",
+    promptSubtitle: "Ko‘rsatmalar ingliz tilida tuziladi, natija tanlangan tilda yoziladi.",
+    englishCore: "English prompt core",
+    systemPromptLabel: "System instructions (English)",
+    userPromptLabel: "Research task (English)",
+    copyPrompt: "Promptdan nusxa olish",
+    refreshPrompt: "Qayta tuzish",
+    integrityTitle: "Ilmiy halollik",
+    integrityText: "AI yordamchi sifatida ishlatiladi. Haqiqiy tajriba va o‘lchovlarni tekshirmasdan qo‘shmang.",
+    footerText: "Ta’lim va tadqiqot uchun vosita · Local-first",
+    saved: "Saqlandi",
+    topicRequired: "Tadqiqot mavzusini kiriting",
+    keyMissing: "API kalitini kiriting",
+    emptyBody: "Matn bo‘sh",
+    working: "Yozilmoqda...",
+    connectionOk: "Aloqa muvaffaqiyatli",
+    error: "Xatolik",
+    done: "Tayyor",
+    noDocx: "docx kutubxonasi yuklanmadi",
+    noTitle: "Ilmiy loyiha",
+    promptReady: "Prompt yangilandi"
+  }
+};
+
+function applyLanguage(lang) {
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const k = el.getAttribute('data-i18n');
+    const val = (translations[lang] || translations.kk)[k];
+    if (val) el.textContent = val;
+  });
+}
+
+function buildPrompts(p) {
+  const langNames = { kk: 'Kazakh (Cyrillic)', ru: 'Russian', en: 'English', uzc: 'Uzbek (Cyrillic)', uzl: 'Uzbek (Latin)' };
+  const subjects = { informatics: 'Informatics & Computer Science', biology: 'Biology', chemistry: 'Chemistry', physics: 'Physics', math: 'Mathematics', history: 'History', language: 'Language & Literature', geography: 'Geography & Ecology', economics: 'Economics & Entrepreneurship', engineering: 'Engineering & Robotics', social: 'Social Sciences', other: 'General Academic Subject' };
+  const types = { research: 'Research Study', project: 'Science & Engineering Project', report: 'Academic Report', essay: 'Essay / Literature Review', experiment: 'Practical Experimental Work', prototype: 'Software / Hardware Prototype' };
+  const complexities = { accessible: 'Accessible, clear, and fundamental for younger learners', balanced: 'Balanced academic rigor with clear student reasoning', advanced: 'Advanced, analytical, rigorous, and deep academic exploration' };
+  const approaches = { guided: 'Step-by-step guidance, encouraging structured self-discovery', independent: 'Independent academic research and critical thinking', practical: 'Strong focus on practical implementation, data gathering, or prototyping', analytical: 'Deep comparative and analytical evaluation' };
+  
+  const subjectName = subjects[p.subject] || 'Academic Subject';
+  const workTypeName = types[p.workType] || 'Research Project';
+  const outLang = langNames[p.outputLanguage] || 'Kazakh';
+  const complexityDesc = complexities[p.complexity] || complexities.balanced;
+  const approachDesc = approaches[p.approach] || approaches.independent;
+  const lengthText = p.length === 'custom' ? `Custom length around ${p.customPages} pages` : p.length === 'short' ? 'Short form (5-7 pages)' : p.length === 'long' ? 'Comprehensive form (13-20 pages)' : 'Standard medium length (8-12 pages)';
+  
+  const system = `You are an expert academic research mentor, educator, and scientific advisor for school and college students. 
+Your goal is to help the student write an original, high-quality, academically sound ${workTypeName} in ${outLang}.
+STUDENT PROFILE:
+- Age: ${p.age} years old (${p.grade || 'General grade'})
+- Subject: ${subjectName}
+- Complexity Level: ${complexityDesc}
+- Approach: ${approachDesc}
+- Target Document Scope: ${lengthText}
+
+CORE PRINCIPLES & ACADEMIC INTEGRITY:
+1. AGE APPROPRIATENESS: Match vocabulary, sentence structure, and conceptual depth to a ${p.age}-year-old learner. Avoid overly dense or fabricated jargon that the student cannot defend in a presentation.
+2. ZERO HALLUCINATION OF EMPIRICAL DATA: If the student provides specific notes, observations, code outputs, or survey results, use them precisely. If no experimental data is provided, explicitly instruct the student where to insert their own measured data, survey results, or code logs. NEVER invent fake statistics, fake survey responses, or fictional experimental measurements without flagging them as placeholders.
+3. STRUCTURE: Provide a logical academic structure appropriate for a ${workTypeName} (Title, Abstract/Introduction, Literature Review, Methodology/Implementation, Results/Analysis, Discussion, Conclusion, References).
+4. OUTPUT LANGUAGE: Write the complete response strictly in ${outLang}.`;
+
+  const task = `RESEARCH TOPIC: "${p.topic}"
+
+${p.requirements ? `TEACHER REQUIREMENTS & FORMATTING RULES:\n${p.requirements}\n` : ''}
+${p.studentNotes ? `STUDENT'S OWN IDEAS, NOTES, OR EXPERIMENTAL FINDINGS:\n${p.studentNotes}\n` : ''}
+
+Please draft the comprehensive academic content for this project in ${outLang}, structured professionally, adhering strictly to the student's age level (${p.age} years) and ensuring all empirical or practical findings leave placeholders for actual student work if not provided.`;
+
+  return {
+    system,
+    task,
+    meta: {
+      band: p.age <= 10 ? 'Junior' : p.age <= 15 ? 'Middle School / High School' : 'Advanced Student',
+      subject: subjectName,
+      language: outLang
+    }
+  };
+}
+
+async function callAI({ provider, key, model, system, prompt, maxTokens }) {
+  if (provider === 'gemini') {
+    const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${key}`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        contents: [{ role: 'user', parts: [{ text: `${system}\n\n${prompt}` }] }],
+        generationConfig: { maxOutputTokens: maxTokens || 8192 }
+      })
+    });
+    const data = await res.json();
+    if (data.error) throw new Error(data.error.message || 'Gemini API error');
+    return data.candidates?.[0]?.content?.parts?.[0]?.text || '';
+  } else if (provider === 'openai') {
+    const res = await fetch('https://api.openai.com/v1/chat/completions', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${key}` },
+      body: JSON.stringify({
+        model: model || 'gpt-4.1-mini',
+        messages: [{ role: 'system', content: system }, { role: 'user', content: prompt }],
+        max_tokens: maxTokens || 4096
+      })
+    });
+    const data = await res.json();
+    if (data.error) throw new Error(data.error.message || 'OpenAI API error');
+    return data.choices?.[0]?.message?.content || '';
+  } else if (provider === 'claude') {
+    const res = await fetch('https://api.anthropic.com/v1/messages', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'x-api-key': key, 'anthropic-version': '2023-06-01', 'anthropic-dangerous-direct-browser-access': 'true' },
+      body: JSON.stringify({
+        model: model || 'claude-3-7-sonnet-latest',
+        system: system,
+        messages: [{ role: 'user', content: prompt }],
+        max_tokens: maxTokens || 4096
+      })
+    });
+    const data = await res.json();
+    if (data.error) throw new Error(data.error.message || 'Claude API error');
+    return data.content?.[0]?.text || '';
+  } else if (provider === 'grok') {
+    const res = await fetch('https://api.x.ai/v1/chat/completions', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${key}` },
+      body: JSON.stringify({
+        model: model || 'grok-3-mini',
+        messages: [{ role: 'system', content: system }, { role: 'user', content: prompt }],
+        max_tokens: maxTokens || 4096
+      })
+    });
+    const data = await res.json();
+    if (data.error) throw new Error(data.error.message || 'Grok API error');
+    return data.choices?.[0]?.message?.content || '';
+  }
+  throw new Error('Unknown provider');
+}
+
+const $ = id => document.getElementById(id);
+let uiLang = localStorage.getItem('qr_ui_lang') || 'kk';
+let currentPrompt = buildPrompts(readProject());
+let toastTimer;
+
+const defaults = {gemini:'gemini-2.5-flash',openai:'gpt-4.1-mini',claude:'claude-3-7-sonnet-latest',grok:'grok-3-mini'};
+function t(k){return (translations[uiLang]||translations.kk)[k]||k}
+function toast(msg){const el=$('toast');if(!el)return;el.textContent=msg;el.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>el.classList.remove('show'),3300)}
+function status(msg,error=false){const st=$('providerStatus');if(!st)return;st.textContent=msg;st.classList.toggle('error',error)}
+function readProject(){return {topic:$('topic')?.value?.trim()\vert{}\vert{}'',age:$('age')?.value||14,grade:$('grade')?.value?.trim()\vert{}\vert{}'',subject:$('subject')?.value||'informatics',workType:$('workType')?.value\vert{}\vert{}'research',outputLanguage:$('outputLanguage')?.value||'kk',length:$('length')?.value\vert{}\vert{}'medium',customPages:$('customPages')?.value||15,complexity:$('complexity')?.value\vert{}\vert{}'balanced',approach:$('approach')?.value||'independent',requirements:$('requirements')?.value?.trim()\vert{}\vert{}'',studentNotes:$('studentNotes')?.value?.trim()||''}}
+function saveProject(){const data=readProject();data.docTitle=$('docTitle')?.value||'';data.documentBody=$('documentBody')?.value\vert{}\vert{}'';localStorage.setItem('qr_project',JSON.stringify(data));const saveStatus=$('saveStatus');if(saveStatus)saveStatus.textContent=uiLang==='en'?'Saved locally':uiLang==='ru'?'Сохранено локально':'Браузерде сақталды'}
+function loadProject(){try{const d=JSON.parse(localStorage.getItem('qr_project')||'null');if(!d)return;for(const [k,v] of Object.entries(d)){const el=$(k);if(el&&v!==undefined)el.value=v}}catch{}}
+function buildAndRenderPrompts(){currentPrompt=buildPrompts(readProject());const sys=$('systemPrompt'),usr=$('userPrompt'),meta=$('promptMeta');if(sys)sys.value=currentPrompt.system;if(usr)usr.value=currentPrompt.task;if(meta)meta.replaceChildren(...[`${readProject().age} years · ${currentPrompt.meta.band}`,currentPrompt.meta.subject,currentPrompt.meta.language].map(s=>{const e=document.createElement('span');e.textContent=s;return e}));return currentPrompt}
+function setTab(tab){document.querySelectorAll('.nav-item').forEach(b=>b.classList.toggle('active',b.dataset.tab===tab));document.querySelectorAll('.tab-panel').forEach(p=>p.classList.toggle('active',p.id===`tab-${tab}`));if(tab==='prompts')buildAndRenderPrompts()}
+function providerKey(){const p=$('provider')?.value\vert{}\vert{}'gemini',mode=$('keyMode')?.value||'user';const name=`qr_${mode}_${p}_key`;return $('apiKey')?.value?.trim()||(sessionStorage.getItem(name)||'')||(localStorage.getItem(name)||'')}
+function keyStoreName(){return `qr_${$('keyMode')?.value||'user'}_${$('provider')?.value||'gemini'}_key`}
+function loadProviderSettings(){const p=localStorage.getItem('qr_provider')||'gemini';if($('provider'))$('provider').value=p;if($('keyMode'))$('keyMode').value=localStorage.getItem('qr_key_mode')||'user';if($('model'))$('model').value=localStorage.getItem(`qr_model_${p}`)||defaults[p];if($('apiKey'))$('apiKey').value=providerKey();}
+function saveProviderSettings(){const p=$('provider')?.value\vert{}\vert{}'gemini';localStorage.setItem('qr_provider',p);localStorage.setItem('qr_key_mode',$('keyMode')?.value||'user');localStorage.setItem(`qr_model_${p}`,$('model')?.value?.trim()||defaults[p]);const name=keyStoreName(),key=$('apiKey')?.value?.trim()\vert{}\vert{}'';if(key){if($('rememberKey')?.checked){localStorage.setItem(name,key);sessionStorage.removeItem(name)}else{sessionStorage.setItem(name,key);localStorage.removeItem(name)}}toast(t('saved'))}
+async function runAI(mode){const p=readProject();if(!p.topic){toast(t('topicRequired'));setTab('project');$('topic')?.focus();return}const key=providerKey();if(!key){toast(t('keyMissing'));setTab('ai');$('apiKey')?.focus();return}buildAndRenderPrompts();let system=currentPrompt.system,prompt=currentPrompt.task;if(mode==='outline')prompt+=`\n\nReturn ONLY a detailed numbered outline with a short explanation of what evidence the student must collect for each section. Do not write the full paper.`;else if(mode==='revise'){const existing=$('documentBody')?.value?.trim()||'';if(!existing){toast(t('emptyBody'));return}prompt=`Improve the following learner-written research text in ${currentPrompt.meta.language}. Preserve the student's meaning and actual facts. Correct structure, clarity, grammar, repetition, and unsupported claims. Do not add invented evidence or sources. Return the revised text, then a short list of factual items that need checking.\n\nTEXT:\n${existing}`;system+=`\nYou are editing existing text, not replacing the learner's own ideas. Never add fabricated facts.`}else if(mode==='paraphrase'){const existing=$('documentBody')?.value?.trim()||'';if(!existing){toast(t('emptyBody'));return}prompt=`Rewrite and paraphrase the following academic text in ${currentPrompt.meta.language} to ensure unique wording, high academic tone, and safety against plagiarism detectors while completely preserving the core scientific meaning and facts:\n\nTEXT:\n${existing}`;system+=`\nYou are an expert academic paraphrasing assistant designed to improve uniqueness and reduce similarity scores.`;}else if(mode==='bib'){prompt=`Generate a professional academic bibliography and references list in ${currentPrompt.meta.language} for the research topic: "${p.topic}". Format entries correctly according to standard academic guidelines (APA/GOST style).`;system+=`\nProvide well-structured academic reference entries.`;}else if(mode==='speech'){const existing=$('documentBody')?.value?.trim()||'';prompt=`Based on the following research work or topic ("${p.topic}"), write a concise 3-minute oral defense speech (presentation script) in ${currentPrompt.meta.language} for a school/college science project competition, along with a 5-slide presentation outline.\n\nCONTENT:\n${existing}`;system+=`\nYou are a presentation coach for young scientists.`;}else if(mode==='test'){system='You are an API connection test. Reply with exactly: QazResearch connection OK';prompt='Reply with exactly: QazResearch connection OK';}
+const btns=[$('generateBtn'),$('reviseBtn'),$('outlineBtn'),$('paraphraseBtn'),$('bibBtn'),$('speechBtn'),$('testAiBtn')].filter(Boolean);btns.forEach(b=>b.disabled=true);const oldLabel=mode==='test'?$('testAiBtn')?.textContent:null;if(mode==='test')status(t('working'));else{setTab('editor');if($('documentBody'))$('documentBody').value=t('working');saveProject()}
+try{const result=await callAI({provider:$('provider')?.value||'gemini',key,model:$('model')?.value?.trim()\vert{}\vert{}defaults[$('provider')?.value||'gemini'],system,prompt,maxTokens:mode==='outline'?5000:12000});if(mode==='test'){status(`${t('connectionOk')} — ${result.slice(0,120)}`);toast(t('connectionOk'))}else{if($('documentBody'))$('documentBody').value=result;if(mode==='outline'){if($('docTitle'))$('docTitle').value=`${p.topic} — research outline`;}else if(!$('docTitle')?.value\vert{}\vert{}$('docTitle').value==='Ғылыми жоба'){if($('docTitle'))$('docTitle').value=p.topic;}saveProject();toast(t('done'))}}catch(e){const msg=`${t('error')}: ${e.message}`;if(mode==='test')status(msg,true);else{if($('documentBody'))$('documentBody').value='';toast(msg);status(msg,true);setTab('ai')}}finally{btns.forEach(b=>b.disabled=false);if(mode==='test'&&$('testAiBtn'))$('testAiBtn').textContent=oldLabel||t('testAi')}}
+
+function insertTableTemplate(){
+  const tableMarkdown = `\n\n| № | Көрсеткіш / Параметр | 1-ші өлшеу | 2-ші өлшеу | Орташа мәні |\n|---|---|---|---|---|\n| 1 | Параметр А | - | - | - |\n| 2 | Параметр Б | - | - | - |\n| 3 | Параметр В | - | - | - |\n\n`;
+  const body = $('documentBody');
+  if(body){
+    body.value += tableMarkdown;
+    saveProject();
+    toast(uiLang==='kk'?'Кесте қосылды':uiLang==='ru'?'Таблица добавлена':'Table added');
+  }
+}
+
+function exportDocx(){const body=$('documentBody')?.value?.trim()||'';if(!body){toast(t('emptyBody'));return}if(!window.docx){toast(t('noDocx'));return}const {Document,Packer,Paragraph,TextRun,HeadingLevel,AlignmentType}=window.docx;const lines=body.split(/\r?\n/);const titleVal=$('docTitle')?.value||t('noTitle');const children=[new Paragraph({text:titleVal,heading:HeadingLevel.TITLE,alignment:AlignmentType.CENTER,spacing:{after:360}})];for(const line0 of lines){const line=line0.trim();if(!line){children.push(new Paragraph({text:''}));continue}const isHead=/^(#{1,3}\s|\d+(?:\.\d+)*[.)]?\s+|(?:INTRODUCTION|CONCLUSION|АННОТАЦИЯ|МАЗМҰНЫ|КІРІСПЕ|ҚОРЫТЫНДЫ|ВВЕДЕНИЕ|ЗАКЛЮЧЕНИЕ|ANNOTATION|CONTENTS)\s*$)/i.test(line);const clean=line.replace(/^#{1,3}\s*/,'');children.push(new Paragraph({children:[new TextRun({text:clean,bold:isHead})],heading:isHead?(line.startsWith('###')?HeadingLevel.HEADING_3:HeadingLevel.HEADING_1):undefined,spacing:{after:isHead?160:100}}))}const doc=new Document({creator:'QazResearch AI PRO MAX',title:titleVal,description:'Research document drafted with QazResearch AI PRO MAX',sections:[{properties:{page:{margin:{top:1440,right:1200,bottom:1440,left:1440}}},children}]});Packer.toBlob(doc).then(blob=>{const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=(titleVal.replace(/[\\/:*?"<>|]+/g,'-').slice(0,80))+'.docx';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1500);toast(t('done'))}).catch(e=>toast(`${t('error')}: ${e.message}`))};
+function switchProvider(){const p=$('provider')?.value||'gemini';if($('model'))$('model').value=localStorage.getItem(`qr_model_${p}`)||defaults[p];if($('apiKey'))$('apiKey').value=providerKey();}
+function localizeOptions(){
+ const dict={
+ kk:{subjects:['Информатика','Биология','Химия','Физика','Математика','Тарих','Тіл және әдебиет','География / экология','Экономика / кәсіпкерлік','Инженерия / робототехника','Әлеуметтік ғылымдар','Басқа пән'],types:['Ғылыми зерттеу','Ғылыми жоба','Баяндама','Эссе / реферат','Тәжірибелік жұмыс','Бағдарламалық прототип'],lengths:['Қысқа (5–7 бет)','Орташа (8–12 бет)','Толық (13–20 бет)','Өзім көрсетемін'],complexity:['Түсінікті, базалық','Теңгерімді','Тереңдетілген'],approach:['Қадамдап бағыттау','Өзіндік зерттеу','Практикаға басымдық','Талдау мен салыстыру'],keys:['Пайдаланушының жеке кілті','Осы браузердегі әкімші кілті']},
+ ru:{subjects:['Информатика','Биология','Химия','Физика','Математика','История','Язык и литература','География / экология','Экономика / предпринимательство','Инженерия / робототехника','Социальные науки','Другой предмет'],types:['Научное исследование','Научный проект','Доклад','Эссе / реферат','Практическая работа','Программный прототип'],lengths:['Кратко (5–7 стр.)','Средне (8–12 стр.)','Подробно (13–20 стр.)','Указать самостоятельно'],complexity:['Понятный, базовый','Сбалансированный','Углублённый'],approach:['Пошаговое руководство','Самостоятельное исследование','Упор на практику','Анализ и сравнение'],keys:['Личный ключ пользователя','Ключ администратора в этом браузере']},
+ en:{subjects:['Informatics','Biology','Chemistry','Physics','Mathematics','History','Language & literature','Geography / environment','Economics / entrepreneurship','Engineering / robotics','Social sciences','Other subject'],types:['Research study','Science project','Report','Essay / review','Practical work','Software prototype'],lengths:['Short (5–7 pages)','Medium (8–12 pages)','Detailed (13–20 pages)','Custom length'],complexity:['Accessible, basic','Balanced','Advanced'],approach:['Step-by-step guidance','Independent research','Practice-focused','Analysis and comparison'],keys:['User’s own key','Admin key in this browser']},
+ uzc:{subjects:['Информатика','Биология','Кимё','Физика','Математика','Тарих','Тил ва адабиёт','География / экология','Иқтисод / тадбиркорлик','Муҳандислик / робототехника','Ижтимоий фанлар','Бошқа фан'],types:['Илмий тадқиқот','Илмий лойиҳа','Маъруза','Esse / referat','Амалий иш','Дастурий прототип'],lengths:['Қисқа (5–7 бет)','Ўртача (8–12 бет)','Батафсил (13–20 бет)','Ўзим белгилайман'],complexity:['Тушунарли, асосий','Мувозанатли','Чуқурлаштирилган'],approach:['Босқичма-босқич йўллаш','Мустақил тадқиқот','Амалиётга устуворлик','Таҳлил ва таққослаш'],keys:['Фойдаланувчининг шахсий калити','Шу браузердаги администратор калити']},
+ uzl:{subjects:['Informatika','Biologiya','Kimyo','Fizika','Matematika','Tarix','Til va adabiyot','Geografiya / ekologiya','Iqtisod / tadbirkorlik','Muhandislik / robototexnika','Ijtimoiy fanlar','Boshqa fan'],types:['Ilmiy tadqiqot','Ilmiy loyiha','Ma’ruza','Esse / referat','Amaliy ish','Dasturiy prototip'],lengths:['Qisqa (5–7 bet)','O‘rtacha (8–12 bet)','Batafsil (13–20 bet)','O‘zim belgilayman'],complexity:['Tushunarli, asosiy','Muvozanatli','Chuqurlashtirilgan'],approach:['Bosqichma-bosqich yo‘llash','Mustaqil tadqiqot','Amaliyotga ustuvorlik','Tahlil va taqqoslash'],keys:['Foydalanuvchining shaxsiy kaliti','Shu brauzerdagi administrator kaliti']}}
+ const d=dict[uiLang]||dict.kk;const set=(id,arr)=>{const select=$(id);if(select)Array.from(select.options).forEach((o,i)=>{if(arr[i])o.textContent=arr[i]})};set('subject',d.subjects);set('workType',d.types);set('length',d.lengths);set('complexity',d.complexity);set('approach',d.approach);set('keyMode',d.keys);const langOpts={kk:['Қазақша — кириллица','Русский','English','Ўзбекча — кириллица','O‘zbekcha — lotin'],ru:['Казахский — кириллица','Русский','Английский','Узбекский — кириллица','Узбекский — латиница'],en:['Kazakh — Cyrillic','Russian','English','Uzbek — Cyrillic','Uzbek — Latin'],uzc:['Қозоқча — кирилл','Русча','Инглизча','Ўзбекча — кирилл','Ўзбекча — лотин'],uzl:['Qozoqcha — kirill','Ruscha','Inglizcha','O‘zbekcha — kirill','O‘zbekcha — lotin']};set('outputLanguage',langOpts[uiLang]||langOpts.kk);
+ const placeholders={kk:['Мысалы: NeoVote цифрлық дауыс беру жүйесінің прототипі','8-сынып','Міндетті бөлімдер, рәсімдеу талаптары, бағалау критерийлері...','Өз бақылауыңыз, кодтың нәтижесі, өлшеу, сауалнама, тәжірибе... ойдан нәтиже қоспау үшін маңызды.'],ru:['Например: прототип цифровой системы голосования NeoVote','8 класс','Обязательные разделы, оформление, критерии оценивания...','Ваши наблюдения, результаты кода, измерения, опросы или опыт. Не выдумывайте результаты.'],en:['Example: prototype of the NeoVote digital voting system','Grade 8','Required sections, formatting, assessment criteria...','Your observations, code output, measurements, survey, or experiment. Do not invent results.'],uzc:['Масалан: NeoVote рақамли овоз бериш тизими прототипи','8-синф','Мажбурий бўлимлар, расмийлаштириш талаблари, баҳолаш мезонлари...','Ўз кузатувларингиз, код натижаси, ўлчов ёки сўровнома. Натижани ўйлаб топманг.'],uzl:['Masalan: NeoVote raqamli ovoz berish tizimi prototipi','8-sinf','Majburiy bo‘limlar, rasmiylashtirish talablari, baholash mezonlari...','O‘z kuzatuvlaringiz, kod natijasi, o‘lchov yoki so‘rovnoma. O‘ylamay natija yozmang.']};const ph=placeholders[uiLang]||placeholders.kk;if($('topic'))$('topic').placeholder=ph[0];if($('grade'))$('grade').placeholder=ph[1];if($('requirements'))$('requirements').placeholder=ph[2];if($('studentNotes'))$('studentNotes').placeholder=ph[3];
+}
+function setLanguage(lang){uiLang=lang;localStorage.setItem('qr_ui_lang',lang);applyLanguage(lang);localizeOptions();buildAndRenderPrompts();}
+
+loadProject();loadProviderSettings();if($('uiLanguage'))$('uiLanguage').value=uiLang;applyLanguage(uiLang);localizeOptions();if($('docTitle')&&!$('docTitle').value)$('docTitle').value=t('noTitle');buildAndRenderPrompts();
+document.querySelectorAll('.nav-item').forEach(b=>b.addEventListener('click',()=>setTab(b.dataset.tab)));
+if($('uiLanguage'))$('uiLanguage').addEventListener('change',e=>setLanguage(e.target.value));
+if($('themeToggle')){$('themeToggle').addEventListener('click',()=>{document.body.classList.toggle('dark');localStorage.setItem('qr_theme',document.body.classList.contains('dark')?'dark':'light')});}if(localStorage.getItem('qr_theme')==='dark')document.body.classList.add('dark');
+if($('length')){$('length').addEventListener('change',()=> {$('customPagesWrap')?.classList.toggle('hidden',$('length').value!=='custom')});}
+if($('projectForm')){$('projectForm').addEventListener('submit',e=>{e.preventDefault();buildAndRenderPrompts();saveProject();setTab('prompts');toast(t('promptReady'))});}
+['topic','age','grade','subject','workType','outputLanguage','length','customPages','complexity','approach','requirements','studentNotes','docTitle','documentBody'].forEach(id=>$(id)?.addEventListener('input',()=>{saveProject();if(['age','grade','subject','workType','outputLanguage','length','customPages','complexity','approach','requirements','studentNotes','topic'].includes(id))buildAndRenderPrompts()}));
+if($('provider'))$('provider').addEventListener('change',switchProvider);
+if($('keyMode'))$('keyMode').addEventListener('change',()=>{$('apiKey').value='';if($('apiKey'))$('apiKey').value=providerKey()});
+if($('saveAiBtn'))$('saveAiBtn').addEventListener('click',saveProviderSettings);
+if($('testAiBtn'))$('testAiBtn').addEventListener('click',()=>{saveProviderSettings();runAI('test')});
+if($('generateBtn'))$('generateBtn').addEventListener('click',()=>runAI('generate'));
+if($('reviseBtn'))$('reviseBtn').addEventListener('click',()=>runAI('revise'));
+if($('outlineBtn'))$('outlineBtn').addEventListener('click',()=>runAI('outline'));
+if($('paraphraseBtn'))$('paraphraseBtn').addEventListener('click',()=>runAI('paraphrase'));
+if($('bibBtn'))$('bibBtn').addEventListener('click',()=>runAI('bib'));
+if($('speechBtn'))$('speechBtn').addEventListener('click',()=>runAI('speech'));
+if($('tableBtn'))$('tableBtn').addEventListener('click',insertTableTemplate);
+
+if($('docxBtn'))$('docxBtn').addEventListener('click',exportDocx);
+if($('pdfBtn'))$('pdfBtn').addEventListener('click',()=>{if(!($('documentBody')?.value?.trim())){toast(t('emptyBody'));return}setTab('editor');window.print()});
+if($('copyBtn')){$('copyBtn').addEventListener('click',async()=>{try{await navigator.clipboard.writeText($('documentBody')?.value\vert{}\vert{}'');toast(t('copied'))}catch{$('documentBody')?.select();document.execCommand('copy');toast(t('copied'))}});}
+if($('copyPromptBtn')){$('copyPromptBtn').addEventListener('click',async()=>{buildAndRenderPrompts();try{await navigator.clipboard.writeText(`SYSTEM INSTRUCTIONS\n${currentPrompt.system}\n\nRESEARCH TASK\n${currentPrompt.task}`);toast(t('copied'))}catch{toast('Clipboard access is unavailable.')}});}
+if($('refreshPromptBtn')){$('refreshPromptBtn').addEventListener('click',()=>{buildAndRenderPrompts();toast(t('promptReady'))});}
+</script>
+</body></html>
+
